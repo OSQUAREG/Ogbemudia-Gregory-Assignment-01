@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="nav-bar">
+      <div class="container">
+        <div class="logo"><img src="./img/mephoto.jpg" alt="photo of me" /></div>
+        <ul class="nav-menu">
+            <li><a href="index.html" >About Me</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html" style="border-bottom: 5px solid rgb(33, 33, 88);">Login</a></li>
+            <li><a href="calculator.html">My Calculator</a></li>
+          </ul>
+      </div>
+    </nav>
+    
+    <!-- MAIN HEADER -->
+    <header>
+      <div class="container">
+        <h1>Login</h1>        
+        <div class="intro">
+          <p>Please enter your login credentials below</p>
+        </div>
+      </div>
+    </header>
+    
+    <!-- MAIN CONTENT -->
+    <div class="login-container" id="login-page">
+      <div class="form-box">
+        <form class="form-items" action="" method="get" accept-charset="utf-8">
+          
+          <div class="username">
+            <input
+              class="inputText"
+              id="inputName"
+              type="text"
+              name="Username"
+              placeholder="Username"
+              required
+            />
+          </div>
+
+          <div class="password">
+            <input
+              class="inputText"
+              id="inputPassword"
+              type="password"
+              name="Password"
+              placeholder="Password"
+              required
+            />
+          </div>          
+          
+          <div>
+            <button class="login-btn" type="submit" >Sign in</button>
+          </div>
+
+          <div class="alt-register">
+            <p><span style="color:aliceblue">Or you don't have an account yet?</span> <a href="register.html">Register here</a></p>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+    
+    <!-- FOOTER NOTE -->
+    <div class="footer-note">
+      <footer>
+        <p>Design by Gregory (OSQUAREG Tech). © 2022.</p>
+      </footer>     
+    </div>
+
+  </body>
+</html>

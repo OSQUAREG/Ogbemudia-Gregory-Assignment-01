@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="nav-bar">
+      <div class="container">
+        <div class="logo"><img src="./img/mephoto.jpg" alt="photo of me" /></div>
+        <ul class="nav-menu">
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a
+              href="register.html"
+              style="border-bottom: 5px solid rgb(33, 33, 88)"
+              >Register</a
+            >
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="calculator.html">My Calculator</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- MAIN HEADER -->
+    <header>
+      <div class="container">
+        <h1>Register</h1>
+        <div class="intro">
+          <p>You can register using the registration form below</p>
+        </div>
+      </div>
+    </header>
+    
+    <!-- MAIN CONTENT -->
+    <div class="form-container" id="register-form">
+      <img src="./img/register.png" alt="contact img" />
+
+      <div class="form-box">
+        <form class="form-items" action="" method="get" accept-charset="utf-8">
+          <div class="first-name">
+            <input
+              class="inputText"
+              id="firstName"
+              type="text"
+              name="FirstName"
+              placeholder="First Name"
+              required
+            />
+          </div>
+
+          <div class="last-name">
+            <input
+              class="inputText"
+              id="lastName"
+              type="text"
+              name="LastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+
+          <div class="phone">
+            <input
+              class="inputText"
+              id="inputPhone"
+              type="tel"
+              name="Phone"
+              placeholder="Phone"
+              required
+            />
+          </div>
+
+          <div class="gender">
+            <select name="Gender" id="selectGender">
+              <option value="Select Gender">Select Gender</option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+          </div>
+
+          <div class="country">
+            <input
+              class="inputText"
+              id="inputCountry"
+              type="text"
+              name="Country"
+              placeholder="Country"
+              required
+            />
+          </div>
+
+          <div class="state-province">
+            <input
+              class="inputText"
+              id="stateProvince"
+              type="text"
+              name="State/Province"
+              placeholder="State/Province"
+            />
+          </div>
+
+          <div class="username">
+            <input
+              class="inputText"
+              id="inputUsername"
+              type="text"
+              name="Username"
+              placeholder="Username"
+            />
+          </div>
+
+          <div class="password">
+            <input
+              class="inputText"
+              id="inputPassword"
+              type="password"
+              name="Password"
+              placeholder="Password"
+            />
+          </div>
+
+          <div class="confirm-password">
+            <input
+              class="inputText"
+              id="confirmPassword"
+              type="password"
+              name="Confirm Password"
+              placeholder="Confirm Password"
+            />
+          </div>
+
+          <div>
+            <button class="register-btn"  type="submit">Register</button>
+          </div>
+
+          <div class="alt-login">
+            <p><span style="color:aliceblue">Or you have an account with.</span> <a href="login.html">Sign in here</a></p>
+          </div>
+
+        </form>        
+
+      </div>
+
+    </div>
+    
+    <!-- FOOTER NOTE -->
+    <div class="footer-note">
+      <footer>
+        <p>Design by Gregory (OSQUAREG Tech). © 2022.</p>
+      </footer>     
+    </div>
+    
+  </body>
+</html>

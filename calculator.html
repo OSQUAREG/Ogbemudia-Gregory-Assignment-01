@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="calculator.css" />
+  <title>My Calculator</title>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="container">
+      <div class="logo"><img src="./img/mephoto.jpg" alt="photo of me" /></div>
+      <ul class="nav-menu">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="calculator.html" style="border-bottom: 5px solid rgb(33, 33, 88);">My Calculator</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN HEADER -->
+  <header>
+    <div class="container">
+      <h1>My Calculator App</h1>
+      <div class="intro">
+        <p>Feel free to try my calcluator app out 🙂</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class=container-box id="calc-container-box">
+
+    <!-- Table Calculator -->
+    <section class="calc-container-box" id="table-calc-contianer">
+      <div class="calc-header">
+        <h2>Table Calculator</h2>
+      </div>
+
+      <div class="calc-container" id="table-calc">
+        <div class="table-calc-box">
+          <table>
+            <tbody>
+
+              <!-- Calculator Display -->
+              <tr>
+                <td colspan="4"><input class="calcDisplay" id="calcDisplay" type="text" placeholder="0"></td>
+              </tr>
+
+              <!-- Top Row Buttons -->
+              <tr>
+                <td colspan="4">
+                  <table>
+                    <tbody>
+                      <tr class="top-row" id="top-row">
+                        <td class="special-btn" id="special-btn">
+                          <input type="button" class="button" id="specialButton" value="%">
+                        </td>
+                        <td class="special-btn" id="special-btn">
+                          <input type="button" class="button" id="specialButton" value="+/-">
+                        </td>
+                        <td class="special-btn" id="special-btn">
+                          <input type="button" class="button" id="specialButton" value="√">
+                        </td>
+                        <td class="special-btn" id="special-btn">
+                          <input type="button" class="button" id="specialButton" value="C">
+                        </td>
+                        <td class="special-btn" id="special-btn">
+                          <input type="button" class="button" id="specialButton" value="⌫">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- Main Buttons -->
+              <tr class="main-buttons" id="btn-789X">
+                <td class="numbers" id="numbers">
+                  <input type="button" class="button" id="numberButton" value="7">
+                </td>
+                <td class="numbers" id="numbers">
+                  <input type="button" class="button" id="numberButton" value="8">
+                </td>
+                <td class="numbers" id="numbers">
+                  <input type="button" class="button" id="numberButton" value="9">
+                </td>
+                <td>
+                  <input type="button" class="button" value="÷" style="font-weight: 1px;">
+                </td>
+              </tr>
+
+              <tr class="main-buttons" id="btn-456-">
+                <td class="numbers" id="numbers">
+                  <input type="button" class="button" id="numberButton" value="4">
+                </td>
+                <td class="numbers" id="numbers">
+                  <input type="button" class="button" id="numberButton" value="5">
+                </td>
+                <td class="numbers" id="numbers">
+                  <input type="button" class="button" id="numberButton" value="6">
+                </td>
+                <td>
+                  <input type="button" class="button" value="×">
+                </td>
+              </tr>
+
+              <tr class="main-buttons" id="btn-123+">
+                <td class="numbers" id="numbers">
+                  <input type="button" class="button" id="numberButton" value="1">
+                </td>
+                <td class="numbers" id="numbers">
+                  <input type="button" class="button" id="numberButton" value="2">
+                </td>
+                <td class="numbers" id="numbers">
+                  <input type="button" class="button" id="numberButton" value="3">
+                </td>
+                <td>
+                  <input type="button" class="button" value="-">
+                </td>
+              </tr>
+
+              <tr class="main-buttons" id="btn-%0.=">
+                <td>
+                  <input type="button" class="button" value=".">
+                </td>
+                <td class="numbers" id="numbers">
+                  <input type="button" class="button" id="numberButton" value="0">
+                </td>
+                <td>
+                  <input type="button" id="equalButton" class="button" value="=">
+                </td>
+                <td>
+                  <input type="button" class="button" value="+">
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Flex Calculator -->
+    <section class="calc-container-box" id="flex-calc-contianer">
+      <div class="calc-header">
+        <h2>Flex Calculator</h2>
+      </div>
+
+      <div class="calc-container" id="flex-calc">
+        <div class="flex-calc-box">
+
+          <!-- Calculator Display -->
+          <div calc-display>
+            <input class="calcDisplay" id="calcDisplay" type="text" placeholder="0">
+          </div>
+
+          <!-- Top Row Buttons -->
+          <div>
+            <input type="button" class="button" id="specialButton" value="%">
+            <input type="button" class="button" id="specialButton" value="+/-">
+            <input type="button" class="button" id="specialButton" value="√">
+            <input type="button" class="button" id="specialButton" value="C">
+            <input type="button" class="button" id="specialButton" value="⌫">
+          </div>
+
+          <!-- Main Buttons -->
+          <div class="main-buttons">
+            <input type="button" class="button" id="numberButton" value="7">
+            <input type="button" class="button" id="numberButton" value="8">
+            <input type="button" class="button" id="numberButton" value="9">
+            <input type="button" class="button" value="x" style="font-weight: 1px;">
+          </div>
+
+          <div class="main-buttons">
+            <input type="button" class="button" id="numberButton" value="4">
+            <input type="button" class="button" id="numberButton" value="5">
+            <input type="button" class="button" id="numberButton" value="6">
+            <input type="button" class="button" value="-">
+          </div>
+
+          <div class="main-buttons">
+            <input type="button" class="button" id="numberButton" value="1">
+            <input type="button" class="button" id="numberButton" value="2">
+            <input type="button" class="button" id="numberButton" value="3">
+            <input type="button" class="button" value="+">
+          </div>
+
+          <div class="main-buttons">
+            <input type="button" class="button" value="%">
+            <input type="button" class="button" id="numberButton" value="0">
+            <input type="button" class="button" value=".">
+            <input type="button" class="button" id="equalButton" value="=">
+          </div>
+
+        </div>
+
+    </section>
+
+  </div>
+
+  <!-- FOOTER NOTE -->
+  <div class="footer-note">
+    <footer>
+      <p>Design by Gregory (OSQUAREG Tech). © 2022.</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="container">
+        <div class="logo"><img src="./img/mephoto.jpg" alt="photo of me" /></div>
+        <ul class="nav-menu">
+            <li><a href="index.html" >About Me</a></li>
+            <li><a href="contact.html" style="border-bottom: 5px solid rgb(33, 33, 88);">Contact</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="calculator.html">My Calculator</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <h1>Contact Me</h1>        
+        <div class="intro">
+          <p>You can contact me using the contact form below</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="form-container" id="contact-form">
+      <img src="./img/contact.jpg" alt="contact img" />
+
+      <div class="form-box">
+        <form class="form-items" action="" method="get" accept-charset="utf-8">
+          <div class="name">
+            <input
+              class="inputText"
+              id="inputName"
+              type="text"
+              name="Name"
+              placeholder="Name"
+              required
+            />
+          </div>
+
+          <div class="email">
+            <input
+              class="inputText"
+              id="inputEmail"
+              type="email"
+              name="Email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="message">
+            <textarea
+              class="inputText"
+              id="writeMessage"
+              name="Message"
+              rows="5"
+              cols="40"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+
+          <div class="priority">
+            <select name="Priority" id="selectPriority">
+              <option value="Select Priority">Select Priority</option>
+              <option value="high">High</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="low">Low</option>
+            </select>
+          </div>
+
+          <div>
+            <button class="submit-btn" type="submit">Submit</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <div class="footer-note">
+      <footer>
+        <p>Design by Gregory (OSQUAREG Tech). © 2022.</p>
+      </footer>     
+    </div>
+
+  </body>
+</html>
